@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Escala de Cores RGB</title>
+</head>
+
+<body>
+    <div class="rgb-selector">
+        <div class="container">
+            <div class="color">
+                <label id="colorRed">(R) Vermelho:</label>
+                <label id="colorGreen">(G) Verde:</label>
+                <label id="colorBlue">(B) Azul:</label>
+            </div>
+            <div class="selector">
+                <input value="0" type="range" id="inputRed" min="0" max="255">
+                <input value="0" type="range" id="inputGreen" min="0" max="255">
+                <input value="0" type="range" id="inputBlue" min="0" max="255">
+            </div>
+            <div class="output">
+                <input value="0" type="text" disabled id="outputRed" for="inputRed">
+                <input value="0" type="text" disabled id="outputGreen" for="inputGreen">
+                <input value="0" type="text" disabled id="outputBlue" for="inputBlue">
+            </div>
+        </div>
+        <div id="rgbColor"></div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
