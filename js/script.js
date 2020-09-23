@@ -1,18 +1,23 @@
 window.addEventListener('load', start);
 
-var colorRed = null;
-var colorGreen = null;
-var colorBlue = null;
+function start(){
+    eventsRGB();
+    addEvents();
+    colorResult();
+}
 
-var inputRed = null;
-var inputGreen = null;
-var inputBlue = null;
+var colorRed = 0;
+var colorGreen = 0;
+var colorBlue = 0;
 
-var outputRed = null;
-var outputGreen = null;
-var outputBlue = null;
+var inputRed = 0;
+var inputGreen = 0;
+var inputBlue = 0;
 
-var rgbColor = null;
+var outputRed = 0;
+var outputGreen = 0;
+var outputBlue = 0;
+
 
 function eventsRGB (){
    colorRed = document.querySelector('#colorRed');
@@ -37,20 +42,19 @@ function addEvents(){
 }
 
 function inputRedChange(event){
-    outputRed.value = event.targt.value;
+    outputRed.value = event.target.value;
     colorResult();
 }
 function inputGreenChange(event){
-    outputGreen.value = event.targt.value;
+    outputGreen.value = event.target.value;
     colorResult();
 }
 function inputBlueChange(event){
-    outputBlue.value = event.targt.value;
+    outputBlue.value = event.target.value;
     colorResult();
 }
 
-function colorResult (){
-     outputRed.target.value = inputRed.target.value;
-  
+function colorResult (){    
+    var cor = 'rgb('+outputRed.value+','+outputGreen.value+','+outputBlue.value+')';
+    rgbColor.style.backgroundColor = cor;
 }
-

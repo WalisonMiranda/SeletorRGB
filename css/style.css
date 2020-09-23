@@ -21,8 +21,19 @@
     margin: 20px 10px;
     padding: 10px;
     justify-content: space-around;
+    font-weight: bold; 
+}
 
-    font-weight: bold;
+#colorRed {
+    color: red;
+}
+
+#colorGreen {
+    color: rgb(14, 201, 14);
+}
+
+#colorBlue {
+    color: blue;
 }
 
 .selector {
